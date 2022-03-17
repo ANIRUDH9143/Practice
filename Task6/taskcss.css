@@ -1,0 +1,15 @@
+td{
+    background-color: yellow;
+}
+thead{
+    background-color: orange;
+}
+table{
+    border: 2px solid black;
+}
+body{
+    background-color: blanchedalmond;
+}
+td{
+    border: 1px solid black;
+}
