@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Passenger Page</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1GdI8v0MJqTrgGSEmE0FBBwwCG0ncFuDbuw&usqp=CAU">
+      <style>
+         .ml-auto, .mx-auto {
+         margin-left: auto!important;
+         background: #dfccff;
+         border: white solid;
+         border-radius: 50px;
+         box-shadow: 5px 5px 100px #883bff;
+         }
+         .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+         margin-bottom: 0.5rem;
+         font-family: inherit;
+         font-weight: 500;
+         line-height: 1.2;
+         color: inherit;
+         text-align: center;
+         }
+         .jumbotron {
+         padding: 2rem 1rem;
+         margin-bottom: 2rem;
+         background-color: #e9ecef;
+         border-radius: 0.3rem;
+         text-align: center;
+         }
+         body,head {
+         background-image:url("https://i0.wp.com/businessupside.com/wp-content/uploads/2020/10/shutterstock_1261811806-scaled.jpg?fit=2560%2C1377&ssl=1");
+         background-repeat: no-repeat;
+         background-size:cover;
+         font-family: cursive;
+         overflow-x: hidden;
+         color: #2c0070;
+         }
+         .button:hover{
+         box-shadow: 0 8px 16px 0 #a980e9;
+         background-color: #a265ff;
+         }
+         li:hover{
+         box-shadow: 0 8px 16px 0 #a980e9;
+         background-color: #a265ff;
+         border-radius: 10px;
+         }
+         .button{
+         background: transparent;
+         zoom: 1.6;
+         }
+         input,select
+         {
+         opacity:1;
+         border: 1px solid black;
+         border-radius: 5px;
+         }
+         #snackbarName,#snackbarPhone,#snackbarMail,#snackbarDetails{
+         visibility: hidden;
+         min-width: 250px;
+         margin-left: -125px;
+         background-color: rgb(255, 0, 0);
+         color: #fff;
+         text-align: center;
+         border-radius: 2px;
+         padding: 16px;
+         position: fixed;
+         z-index: 1;
+         left: 50%;
+         bottom: 30px;
+         font-size: 17px;
+         }
+         #snackbar{
+         visibility: hidden;
+         min-width: 250px;
+         margin-left: -125px;
+         background-color: rgb(9, 255, 0);
+         color: rgb(0, 0, 0);
+         text-align: center;
+         border-radius: 2px;
+         padding: 16px;
+         position: fixed;
+         z-index: 1;
+         left: 50%;
+         bottom: 30px;
+         font-size: 17px;
+         }
+         #snackbarName.show,#snackbarPhone.show,#snackbarMail.show,#snackbarDetails.show{
+         visibility: visible;
+         -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+         animation: fadein 0.5s, fadeout 0.5s 2.5s;
+         }
+         @-webkit-keyframes fadein {
+         from {bottom: 0; opacity: 0;} 
+         to {bottom: 30px; opacity: 1;}
+         }
+         @keyframes fadein {
+         from {bottom: 0; opacity: 0;}
+         to {bottom: 30px; opacity: 1;}
+         }
+         @-webkit-keyframes fadeout {
+         from {bottom: 30px; opacity: 1;} 
+         to {bottom: 0; opacity: 0;}
+         }
+         @keyframes fadeout {
+         from {bottom: 30px; opacity: 1;}
+         to {bottom: 0; opacity: 0;}
+         }
+      </style>
+   </head>
+   <body>
+      <div class="row" style="background-color: #c2ace4;">
+         <div class="col" style="color: #c2ace4; margin-left:1px;">
+            <button class="btn button" onclick="window.location.href='index.html';"><i class="fa fa-home"></i></button>
+         </div>
+         <ul class="col nav justify-content-end" style="background-color: #c2ace4;">
+            <li class="nav-item " style="font-size: 1.1em;">
+               <a class="nav-link text-dark" href="index.html">
+                  <h4 style="margin-top:5%;">Home</h4>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link text-dark" href="about.html">
+                  <h4 style="margin-top:5%;">About us</h4>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-6 mx-auto" style="margin-top: 3%;">
+               <div class="jumbotron hyper"  style="background:transparent;">
+                  <div class="text-center" style="padding-bottom:20px">
+                     <h3>Register Form</h3>
+                  </div>
+                  <form class="needs-validation " novalidate  method="post">
+                     <div class="form-row">
+                        <label>Name* </label>
+                        <input type="text" id="name" placeholder="Enter name here" name="name" required  class="form-control" required>
+                     </div>
+                     <div class="form-row">
+                        <label>Mail id* </label>
+                        <input type="email" id="mailId" placeholder="Enter mail address here" name="mailId" required class="form-control">
+                     </div>
+                     <div class="form-row">
+                        <label>Phone Number* </label>
+                        <input type="number" id="phoneNumber" placeholder="Enter phone number here" name="phoneNumber" required class="form-control" style="margin-bottom: 2%;">
+                     </div>
+                     <input class="btn btn-primary" id="submit" onclick=" createPassenger()" value="Submit" type="button" >
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="snackbar"><i class="fa-solid fa-check"></i>  Successfull</div>
+      <div id="snackbarDetails"><i class="fa-solid fa-xmark"></i>  Invalid details</div>
+      <div id="snackbarName"><i class="fa-solid fa-xmark"></i>  Invalid name</div>
+      <div id="snackbarMail"><i class="fa-solid fa-xmark"></i>  Invalid mail id</div>
+      <div id="snackbarPhone"><i class="fa-solid fa-xmark"></i>  Invalid phone number</div>
+      <script src="https://kit.fontawesome.com/6fd4eabe0a.js" crossorigin="anonymous"></script>
+      <script src="JS/PassengerPageJS.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
+</html>
