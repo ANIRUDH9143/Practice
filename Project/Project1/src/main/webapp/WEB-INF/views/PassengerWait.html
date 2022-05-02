@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Passenger Wait</title>
+        <style>
+            body,head {
+            background-image:url("https://i0.wp.com/businessupside.com/wp-content/uploads/2020/10/shutterstock_1261811806-scaled.jpg?fit=2560%2C1377&ssl=1");
+            background-repeat: no-repeat;
+            background-size:cover;
+            font-family: cursive;
+            overflow: hidden;
+
+            }
+            .button{
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: bisque;
+            }
+            .button2{
+            background: transparent;
+            zoom: 1.6;
+            }
+        </style>
+    </head>
+    <body >
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/6fd4eabe0a.js" crossorigin="anonymous"></script>
+        <div class="row">
+            <div class="col">
+                <button class="btn button2" onclick="window.location.href='index.html';"><i class="fa fa-home"></i></button>
+            </div>
+            <ul class="col nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="AboutUs.html">About us</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div >
+            <div class="card" style="background-color: #ddd5e8;;margin-left: 25%;margin-right: 25%;margin-top: 10%;box-shadow: 10px 10px 10px black; border: 3px solid white;">
+                <table class="table ">
+                    <thead style="background-color: #c3a7e8;">
+                        <tr>
+                            <th>Rider name</th>
+                            <th>Rider car number</th>
+                            <th>Rider start point</th>
+                            <th>Rider destination</th>
+                            <th>Rider phone number</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td id="name"></td>
+                        <td id="carNumber"></td>
+                        <td id="startPoint"></td>
+                        <td id="destination"></td>
+                        <td id="phoneNumber"></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- <div style="margin-left: 45%;margin-top:2%;">
+                <button onclick="fetchRider()" class="button">Search for Cars</button>
+            </div> -->
+        </div>
+        <!-- <div>
+            <p id="notFound"></p>
+        </div> -->
+        <script src="JS/PassengerWaitJS.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

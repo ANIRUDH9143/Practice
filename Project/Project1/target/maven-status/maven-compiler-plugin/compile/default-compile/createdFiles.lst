@@ -1,0 +1,12 @@
+com\models\Owner.class
+com\models\Customer.class
+com\services\CustomerService.class
+com\models\Request.class
+com\controllers\CustomerController.class
+com\services\OwnerService.class
+com\services\RequestService.class
+com\services\DatabaseCustomerServiceImpl.class
+com\services\DatabaseOwnerServiceImpl.class
+com\controllers\RequestController.class
+com\controllers\OwnerController.class
+com\services\DatabaseRequestServiceImpl.class
